@@ -1,0 +1,110 @@
+/*? Styling form */
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #ffe7e0;
+}
+
+form {
+  margin: auto;
+  background-color: #9c9c9b;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(5, 5, 5, 0.5);
+  padding: 18px;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  color: #585123;
+  text-decoration: underline #772f1a;
+}
+h2 {
+  text-align: center;
+  color: #772f1a;
+  text-shadow: 0 3px 6px #e4986f;
+}
+
+fieldset {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #e4986f;
+}
+
+legend {
+  font-weight: bold;
+  text-align: left;
+  font-size: larger;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: rgb(12, 12, 12);
+  font-size: large;
+}
+
+input,
+textarea {
+  margin-top: 4px;
+  padding: 8px;
+  width: calc(100% - 1px);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background-color: #585123;
+  color: rgb(255, 251, 251);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px;
+  cursor: pointer;
+}
+button:hover {
+  color: #e7cd24;
+}
+
+/*? Styling generated resume */
+#generated-resume {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid rgb(7, 7, 7);
+  border-radius: 8px;
+  background-color: #e4986f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+#generated-resume h2 {
+  color: black;
+}
+
+
+@media print {
+  #resume-form{
+    display: none;
+  }
+
+  #shareableLink{
+    display: none;
+  }
+}
+
+h3{
+  background-color: #585123;
+  border-radius: 5px;
+  padding: 5px;
+}

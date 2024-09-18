@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shareable Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Shareable Resume Builder</h1>
+    <h2>Created By Hira Khalid</h2>
+
+    <!--*Create Resume Form-->
+    <form id="resume-form">
+      <!--*Personal Information-->
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="username">username:</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter your username"
+          required
+        />
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <label for="email"> Email:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your e-mail"
+          required
+        />
+
+        <label for="phone"> Phone Num:</label>
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Enter your phone number"
+          required
+        />
+      </fieldset>
+
+      <!--*Education-->
+      <fieldset>
+        <legend>Education</legend>
+        <label for="education_description">Education</label>
+        <textarea
+          id="education"
+          placeholder="Enter your Education..."
+          rows="4"
+          required
+        ></textarea>
+      </fieldset>
+
+      <!--*Experience-->
+      <fieldset>
+        <legend>Experience</legend>
+        <label for="experience">Experience</label>
+        <textarea
+          id="experience"
+          placeholder="Enter your work Experience..."
+          rows="4"
+          required
+        ></textarea>
+      </fieldset>
+
+      <!--*Skills-->
+      <fieldset>
+        <legend>Skills</legend>
+        <label for="skills">Skills</label>
+        <textarea
+          id="skills"
+          placeholder="Enter your skills..."
+          rows="4"
+          required
+        ></textarea>
+      </fieldset>
+
+      <button type="submit">Build Resume</button>
+    </form>
+
+    <br />
+
+    <!--*Dynamic & editable Resume Div-->
+    <!--*Use attribute "contentediable" for content edit on browser-->
+    <div id="generated-resume" contenteditable="true"></div>
+
+    <br />
+
+    <!--*Shareable link and download-->
+    <div id="shareableLink">
+      <h2>Shareable Link</h2>
+      <a href="#" id="share-link">Shareable Link</a>
+      <br />
+      <button id="pdf-download">PDF Download</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
